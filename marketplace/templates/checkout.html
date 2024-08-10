@@ -3,18 +3,6 @@
 {% block content %}
 
 <body>
-    <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
-    </div>
-    <!-- End Top Search -->
-
     <!-- Start All Title Box -->
     <div class="all-title-box">
         <div class="container">
@@ -157,17 +145,17 @@
                                 <label class="custom-control-label" for="same-address">Shipping address is the same as
                                     my billing address</label>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="save-info">
-                                <label class="custom-control-label" for="save-info">Save this information for next
-                                    time</label>
-                            </div>
                             <hr class="mb-4">
                             <div class="title"> <span>Payment</span> </div>
                             <div class="d-block my-3">
                                 <div class="custom-control custom-radio">
-                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    <input id="cod" name="paymentMethod" type="radio" class="custom-control-input"
                                         checked required>
+                                    <label class="custom-control-label" for="cod">Cash On Delivery</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                        required>
                                     <label class="custom-control-label" for="credit">Credit card</label>
                                 </div>
                                 <div class="custom-control custom-radio">
@@ -318,8 +306,7 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="col-12 d-flex shopping-box"> <a href="checkout"
-                                class="ml-auto btn hvr-hover">Place Order</a> </div>
+                        <div class="col-12 d-flex shopping-box"> <button class="ml-auto btn hvr-hover" type="submit">Place Order</button> </div>
                     </div>
                 </div>
             </div>

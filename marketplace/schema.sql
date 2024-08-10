@@ -10,18 +10,17 @@ CREATE TABLE user (
   admin INTEGER NOT NULL
 );
 
-CREATE TABLE item (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    item_name TEXT NOT NULL,
-    item_description TEXT,
-    item_image BLOB,
-    price INTEGER NOT NULL
-);
 
-CREATE TABLE cart (
-    cart_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id INTEGER NOT NULL,
-    item_id INTEGER NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user (id),
-    FOREIGN KEY (item_id) REFERENCES item (id)
+CREATE TABLE orders (
+    fnm TEXT NOT NULL,
+    lnm TEXT NOT NULL,
+    unm TEXT NOT NULL,
+    eml TEXT NOT NULL,
+    ad1 TEXT NOT NULL,
+    ad2 TEXT NOT NULL,
+    cnt TEXT NOT NULL,
+    stt TEXT NOT NULL,
+    zip TEXT NOT NULL,
+    sad TEXT NOT NULL,
+    pay TEXT NOT NULL,
 );

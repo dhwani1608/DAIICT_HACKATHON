@@ -14,7 +14,6 @@ UPLOAD_FOLDER = dir_path + '/static'
 
 @bp.route('about')
 def about():
-
     return render_template('about.html')
 
 
@@ -26,8 +25,3 @@ def my_acc():
 @bp.route('contact-us')
 def contact_us():
     return render_template('contact-us.html')
-
-
-@bp.route('gallery')
-def gallery():
-    return render_template('gallery.html')
