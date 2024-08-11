@@ -16,7 +16,6 @@ def register():
         name = request.form['name']
         username = request.form['username']
         password = request.form['password']
-        emailid = request.form['emailid']
         isSeller = request.form.get('isSeller')
         db = get_db()
         error = None
@@ -61,7 +60,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return render_template('index.htmll')
 
         flash(error)
     return render_template('login.html')
